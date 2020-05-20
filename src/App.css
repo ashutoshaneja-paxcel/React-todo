@@ -2,8 +2,9 @@
   text-align: center;
   background-color: darkslateblue;
   display: block;
-  height: 100vh;
+  min-height: 100vh;
   color: azure;
+  cursor: default;
 }
 
 .App-logo {
@@ -28,10 +29,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -46,25 +43,41 @@
 }
 .container{
   padding: 5px;
-  font: 500 "Calibri" 16px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .input-text{
-  box-shadow: aliceblue;
-  padding: 5px;
+  box-sizing: border-box;
+  border: 3px solid cyan;
+  outline: none;
+  padding: 10px;
   margin: 10px;
   font-size: 20px;
   border-radius: 20em;
 }
 
+.input-text:focus{
+  border: 3px solid #2e2e61e6;
+}
+
+.emoji{
+  font-size: x-large;
+}
+
 li{
   font-size: larger;
+  list-style: none;
 }
 .add-btn, .delete-btn{
-  height: 32px;
-  width: 120px;
-  font-size: larger;
-  margin: 7px;
-  color:cyan;
-  background: blue;
+  height: 42px;
+  width: 130px;
+  font-size: 22px;
+  margin: 22px;
+  border: 3px solid #2e2e61e6;
+  color:purple;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.add-btn:hover, .add-btn:focus, .delete-btn:hover, .delete-btn:focus{
+  background-color: #2e2e61e6;
+  color: white;
 }

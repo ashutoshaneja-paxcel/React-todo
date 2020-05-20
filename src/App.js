@@ -67,7 +67,7 @@ class App extends React.Component {
                 this.state.list.map(item => {
                   return(
                     <li key={item.id}>
-                      {item.value}
+                      <span role="img" aria-label="hand" className="emoji">&#x1F449;&#x1F3FB;</span>  {item.value}
                       <button className="delete-btn" 
                       onClick={() => this.deleteItem(item.id)}>Delete</button>
                     </li>
